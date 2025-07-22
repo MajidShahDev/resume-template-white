@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "Infra";
+  src: url("/fonts/Infra-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.resume-container {
+  background-color: hsl(240, 6%, 94%);
+  font-family: "montserrat", sans-serif;
+  letter-spacing: 0.1px;
+  height: 1123px;
+  width: 794px;
+  color: hsl(0, 0%, 30%);
+  position: relative;
+}
+
+.top-right-vector {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  opacity: 0.3;
+}
+
+.bottom-left-circle {
+  position: absolute;
+  z-index: 1;
+  left: 100px;
+  bottom: 0;
+  opacity: 0.3;
+}
+
+.image-container {
+  display: flex;
+  height: fit-content;
+  position: relative;
+  width: fit-content;
+}
+
+.profile-image {
+  height: 234.419px;
+  width: 226.976px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid hsl(240, 7%, 94%);
+}
+
+.profile-image-vector {
+  position: absolute;
+}
+
+.intro-section {
+  padding-top: 25px;
+  padding-right: 40px;
+}
+
+.full-name {
+  font-family: "Infra", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 34px;
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: hsl(0, 0%, 0%);
+}
+
+.job-title {
+  margin-bottom: 21px;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(0, 0%, 0%);
+}
+
+.introduction {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.star-top {
+  position: absolute;
+  top: 26px;
+  left: 330px;
+  aspect-ratio: 1/1;
+  width: 30px;
+}
+
+/* INFO SECTION */
+.info-section {
+  display: flex;
+  justify-content: center;
+}
+
+.column-1 {
+  width: 282px;
+  margin-top: 71px;
+}
+
+.column-2 {
+  width: 368px;
+  margin-top: 71px;
+}
+
+.heading {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+  font-weight: 700;
+  color: hsl(0, 0%, 0%);
+}
+
+.heading::before {
+  content: "";
+  display: inline-block;
+  background-image: url("svg/heading-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  vertical-align: top;
+  margin-top: 2.45px;
+}
+
+.education-heading {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.languages-heading {
+  margin-bottom: 25px;
+}
+
+.heading-experience {
+  margin-top: 21px;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-size: 14px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: hsl(0, 0%, 40%);
+}
+
+.title-education {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.title-experience {
+  margin-top: 15px;
+  margin-bottom: 1px;
+}
+
+.sub-title {
+  font-weight: 600;
+  padding-top: 4px;
+  font-size: 12px;
+  padding-bottom: 15px;
+  color: hsl(161, 72%, 46%);
+}
+
+.email,
+.phone,
+.website,
+.address,
+.skill-set {
+  font-size: 12px;
+  line-height: 23px;
+  font-weight: 500;
+}
+
+.date {
+  color: hsl(0, 0%, 45%);
+  font-size: 12px;
+  font-weight: 450;
+  letter-spacing: 0.7px;
+}
+
+.date-seprator {
+  color: hsl(0, 0%, 75%);
+  padding: 0 5px 0 5px;
+}
+
+.date-experience {
+  margin-top: 15px;
+}
+
+.exp-points-container {
+  margin-bottom: 21px;
+}
+
+.exp-point {
+  font-size: 13px;
+  position: relative;
+  margin-left: 5px;
+  margin-bottom: 8px;
+  padding-left: 1.1em;
+  text-indent: 0;
+  list-style: none;
+  font-weight: 450;
+  line-height: 18px;
+}
+
+.exp-point::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  font-size: 8px;
+  margin-top: 0.3px;
+}
+
+.language-title {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 12px;
+  color: hsl(0, 0%, 30%);
+}
+
+.language-level {
+  font-size: 12px;
+}
+
+.language-seprator {
+  padding: 0 5px 0 5px;
+}
